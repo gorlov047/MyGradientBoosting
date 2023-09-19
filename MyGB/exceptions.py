@@ -1,5 +1,5 @@
 """
-The MyGB.exceptions` module includes all custom warnings and error
+This module includes all custom warnings and error
 classes used across MyGB.
 """
 

@@ -1,6 +1,6 @@
 from typing import List, Tuple
-from typing_extensions import Self
 from collections import Counter
+from typing_extensions import Self
 import numpy as np
 from exceptions import NotFittedError, UnidentifiedFeatureType
 
