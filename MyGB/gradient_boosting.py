@@ -92,8 +92,8 @@ class GradientBoosting:
 
         for _ in range(self.n_estimators):
             self._fit_new_base_model(x_train, y_train, train_predictions)
-            train_predictions = self.calculate_margin(x_train)
-            new_val_preds = self.calculate_margin(x_valid)
+            train_predictions = self.predict(x_train)
+            new_val_preds = self.predict(x_valid)
             if self.early_stopping_rounds is not None:
                 if (self.loss_fn(y_valid, new_val_preds) >=
                         self.loss_fn(y_valid, valid_predictions)):
