@@ -4,8 +4,8 @@ from tree_regressor import DecisionTreeRegressor
 from loss_functions import LossFunction
 
 
-class GradientBoosting:
-    """Gradient Boosting on Decision Trees class.
+class GradientBoostingRegresor:
+    """Gradient Boosting on Decision Trees class for regression.
 
     Parameters
     ----------
@@ -124,5 +124,3 @@ class GradientBoosting:
         for gamma, model in zip(self.gammas, self.models):
             preds += gamma * model.predict(X)
         return preds
-
-    
